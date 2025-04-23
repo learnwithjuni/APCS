@@ -1,0 +1,2 @@
+First, create a private variable named incorrectCount in the CheckDigit class. This will be an integer. Then, in the isValid method, every time that a number was deemed invalid, then it would increment incorrectCount by 1 before returning false.
+

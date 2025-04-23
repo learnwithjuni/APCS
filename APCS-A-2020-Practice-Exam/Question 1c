@@ -1,0 +1,5 @@
+public Gizmo getCheapestGizmoByMaker(String maker);
+
+I would create another function that gets an ArrayList<Gizmo> of the Gizmos that come from a certain maker. This function signature will be public ArrayList<Gizmo> getGizmosByMaker(String maker), and added to the OnlinePurchaseManager class to access the private variable purchases. This would find all Gizmos by a certain maker, using the getMaker function from the Gizmo class, and this would iterate through all of the Gizmos in the purchases ArrayList, adding them to an output ArrayList, and returning it at the end.
+
+Then, the getCheapestGizmoByMaker would iterate through the Gizmos by this manufacturer, keeping track of the cheapest Gizmo. In order to analyze the price of each Gizmo and find the cheapest, I would have a function in the Gizmo class public double getPrice() to get the price of each Gizmo. If the Gizmo does not have a price private variable, this should be something like private double price added to the Gizmo class.
